@@ -17,4 +17,8 @@ public class Calculatrice {
         return b==0?0:a / b;
     }
 
+    public int max(int a, int b) {
+        return Math.max(a, b);
+    }
+
 }

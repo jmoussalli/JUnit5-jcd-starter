@@ -79,4 +79,40 @@ public class CalculatriceTest {
         int result = calculatrice.diviser(10, 0);
         assertEquals(0, result);
     }
+
+    @Test
+    public void testMaxWithMixedNumbers() {
+        Calculatrice calculatrice = new Calculatrice();
+        int result = calculatrice.max(-5, 8);
+        assertEquals(8, result);
+    }
+
+    @Test
+    public void testMaxWithEqualNumbers() {
+        Calculatrice calculatrice = new Calculatrice();
+        int result = calculatrice.max(5, 5);
+        assertEquals(5, result);
+    }
+
+    @Test
+    public void testMaxWithZero() {
+        Calculatrice calculatrice = new Calculatrice();
+        int result = calculatrice.max(5, 0);
+        assertEquals(5, result);
+    }
+
+    @Test
+    public void testMaxWithNombresNegatifs() {
+        Calculatrice calculatrice = new Calculatrice();
+        int result = calculatrice.max(-5, -2);
+        assertEquals(-2, result);
+    }
+
+    @Test
+    public void testMaxWithMemesNombres() {
+        Calculatrice calculatrice = new Calculatrice();
+        int result = calculatrice.max(5, 5);
+        assertEquals(5, result);
+    }
+
 }
